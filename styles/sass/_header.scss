@@ -1,0 +1,108 @@
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    .headerTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 60vh;
+        border: 10px solid $mainFontColor;
+        box-shadow: 30px 30px $shadowColor;
+        z-index: 100;
+
+        h1 {
+            @include font(5.5rem, 10px, 900);
+            padding: 2rem 1rem 0 1rem;
+        }
+        
+        .squiggle {
+            height: 2.5vw;
+            padding-left: 1rem;
+        }
+
+        h2 {
+            @include font(1.5rem, 3px, 400);
+            text-transform: uppercase;
+            padding: 0 1rem 2rem 1rem;
+        }
+    }
+
+    .circle {
+        position: absolute;
+        height: 55%;
+
+        &:first-of-type {
+            bottom: 59%;
+            right: 82%;
+        }
+
+        // activate if you want stand alone header:
+        // &:last-of-type {
+        //     top: 60%;
+        //     left: 80%;
+        // }
+    }
+}
+
+
+
+// header media queries
+
+@media (max-width: 900px) {
+    header {
+        .headerTitle{
+            h1{
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        .headerTitle {
+            align-items: flex-start;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        .headerTitle{
+            box-shadow: 50px 40px $shadowColor;
+
+            h2{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        .headerTitle{
+            height: 50vh;
+
+            h1{
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .circle {
+        height: 55%;
+
+        &:first-of-type {
+        right: 70%;
+        }
+
+        &:last-of-type {
+        left: 70%;
+        }
+    }
+}

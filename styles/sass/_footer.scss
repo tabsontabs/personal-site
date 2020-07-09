@@ -1,0 +1,10 @@
+footer {
+    background-color: $shadowColor;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+
+    a:hover, a:focus {
+        background-color: $accentColor;
+    }
+}

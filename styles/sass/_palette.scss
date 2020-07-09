@@ -1,0 +1,15 @@
+// colors
+$mainBackgroundColor: #FEF7F3;
+$mainFontColor: #37393b;
+$shadowColor: #93C2BC;
+$accentColor: #ed8eb9; 
+
+// fonts
+$mainFont: 'Lato', sans-serif;
+
+// mixin to set font size, letter spacing, and font weight for text
+@mixin font($size, $ls, $weight) {
+    font-size: $size;
+    letter-spacing: $ls;
+    font-weight: $weight;
+}

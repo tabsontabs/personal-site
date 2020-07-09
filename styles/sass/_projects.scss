@@ -1,0 +1,96 @@
+.projects {
+    position: relative;
+    overflow-y: scroll;
+
+    .projectsContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+
+        h3 {
+            border: 10px solid $mainFontColor;
+            box-shadow: -15px -15px $shadowColor;
+            padding: 1rem 15rem;
+        }
+
+        ul {
+            @include font(1.2rem, 3px, 400);
+            list-style: none;
+            display: flex;
+            padding: 3rem 0rem 1rem 0rem;
+
+            li {
+                display: flex;
+                align-items: center;
+                min-width: 100%;
+            }
+
+            .projectLink:hover, .projectLink:focus {
+                opacity: 0.5;
+            }
+
+            .mockup {
+                width: 100%;
+            }
+
+            .projectText {
+                padding: 1rem;
+                width: 80%;
+            }
+
+            h4 {
+                font-weight: 700;
+                padding: 1rem 0rem 1rem 0rem;
+            }
+
+            .apiLink:hover, .apiLink:focus {
+                background-color: $shadowColor;
+            }
+
+            .friendLink:hover, .friendLink:focus {
+                background-color: $accentColor;
+            }
+        }
+    }
+    
+    .circle {
+        position: absolute;
+        height: 55%;
+
+        &:first-of-type {
+            top: -5%;
+            right: -5%;
+        }
+
+        // &:last-of-type {
+        //     top: 60%;
+        //     left: 80%;
+        // }
+    }
+
+    .dotNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        button {
+            padding: 15px;
+            font-size: 1.5rem;
+            border: none;
+            background-color: $mainBackgroundColor;
+            color: $mainFontColor;
+
+            &:hover, &:focus {
+                color: $shadowColor;
+                outline: none;
+            }
+        }
+
+        .projectOneNavCircle {
+            color: $shadowColor;
+        }
+    }
+}
+
+

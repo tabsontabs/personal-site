@@ -1,0 +1,106 @@
+.contact {
+
+    .contactHolder {
+        display: flex;
+        justify-content: space-around;
+        margin: 3rem 5% 5rem 5%;
+        padding: 2rem 1rem 2rem 1rem;
+        border: 10px solid $mainFontColor;
+        box-shadow: -20px 20px $shadowColor;
+    }
+}
+
+.contactInfo {
+
+    address {
+        padding-top: 0.5rem;
+        font-style: normal;
+        
+        h4 {
+            padding-top: 1.5rem;
+        }
+
+        p {
+            padding: 5px 0 5px 0;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            padding: 5px 0 5px 0;
+        }
+
+        li {
+            font-size: 2rem;
+        }
+
+        li:first-of-type {
+            padding-right: 1rem;
+        }
+
+        li:last-of-type {
+            padding-left: 1rem;
+        }
+
+        i:hover, i:focus {
+            color: $shadowColor;
+        }
+    }
+}
+
+.contactForm {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+        p {
+            font-weight: 700;
+            font-size: 1rem;
+            text-align: center;
+            padding-bottom: 1.5rem;
+            padding-top: 0.5rem;
+        }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    input, textarea, button {
+        padding: 10px;
+    }
+    
+    input, textarea {
+        border: none;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 10px 0px 10px 10px;
+    }
+
+    textarea {
+        resize: none;
+        height: 120px;
+    }
+
+    input:focus, textarea:focus {
+        outline-style: auto;
+        outline-color: $shadowColor;
+        outline-width: medium;
+    }
+
+    button {
+        border: none;
+        background-color: $shadowColor;
+        color: $mainFontColor;
+        font-weight: 700;
+        width: 40%;
+        align-self: center;
+        margin-top: 10px;
+
+        &:hover, &:focus {
+            background-color: $mainFontColor;
+            color: $mainBackgroundColor;
+        }
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabitha's Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/34aa087edc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
+        <div class='headerTitle headerWrapper'>
+            <h1>Tabitha Poeze</h1>
+            <img class='squiggle' src="./assets/squiggle.png" alt="Just a little squiggly line">
+            <!-- <h2>Web Developer Extraordinnaire <span>✨</span></h2> -->
+            <h2>Portfolio Coming Soon <span alt="Emoji featuring 2 eyes looking to the side">👀</span></h2>
+        </div>
+        <!-- activate if you want stand alone header: -->
+        <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
+    </header>
+    <!-- <section>
+        <div class='about wrapper'>
+            <div class='aboutText'>
+                <h3>About Me</h3>
+                <p>Web Developer 👩‍💻  Accessibility fanatic 🙆🏼‍♀️  Business school survivor 💼  Dachshund mom 🐶  Astronomy geek 🚀 Game enthusiast (Ticket to Ride and Unstable Unicorns are my favs) 🎲 Ammateur sommelier 🍷  Travel lover (22 countries and counting!) 🌎  I miss the old Kanye 💔</p>
+            </div>
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </section> -->
+    <section class='projects'>
+        <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
+        <!-- <img class='trSquiggle' src="./assets/squiggleTransparent.png" alt="Just a little squiggly line"> -->
+        <div class='projectsContent wrapper'>
+            <h3>Projects</h3>
+            <ul class='projectsGrid'>
+                <li>
+                    <a class='projectLink' href='https://tabsontabs.github.io/tabitha-poeze-project-five'>
+                        <img class='mockup' src="./assets/villagerFinderMockup.png" alt="">
+                    </a>
+                    <div class='projectText'>
+                        <h4><a class='projectLink' href='https://tabsontabs.github.io/tabitha-poeze-project-five/'>The Villager Finder</a></h4>
+                        <p>An app that allows you to filter through characters from Animal Crossing: New Horizons. Built using React and the <a class='apiLink' href='https://acnhapi.com/'>ACNH Api</a>.</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="">
+                        <img class='mockup' src="./assets/villagerFinderMockup.png" alt="">
+                    </a>
+                    <div class='projectText'>
+                        <h4>It's Wine Time</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam aliquid fugiat distinctio sequi aspernatur,
+                            nesciunt esse perferendis magni veniam possimus soluta quo ea similique tenetur quisquam delectus nihil
+                            provident autem!</p>
+                    </div>
+                </li>
+                <li>
+                    <a class='projectLink' href="https://tabs-n-kat.github.io/katDeVriezeTabithaPoezeProject4/">
+                        <img class='mockup' src="./assets/galleryMockup.png" alt="">
+                    </a>
+                    <div class='projectText'>
+                        <h4>The Gallery Project</h4>
+                        <p>An app that I pair programmed with another amazing developer, <a class='friendLink' href='https://katm.dev/'>Kat DeVrieze</a>. We used jQuery and the <a class='apiLink' href='https://metmuseum.github.io/'>Met Museum API</a>. The app allows you to view artworks and relevant information based on a search query.</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="">
+                        <img class='mockup' src="./assets/villagerFinderMockup.png" alt="">
+                    </a>
+                    <div class='projectText'>
+                        <h4>My Watchlists</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam aliquid fugiat distinctio sequi aspernatur,
+                            nesciunt esse perferendis magni veniam possimus soluta quo ea similique tenetur quisquam delectus nihil
+                            provident autem!</p>
+                    </div>
+                </li>
+            </ul>
+            <form class='dotNav'>
+                <input class="sr-only" type="radio" id="projectOne" name="project" value="projectOne">
+                <label for="projectOne"><button class='projectOneNavCircle'>●</button></label>
+                <input class="sr-only" type="radio" id="projectTwo" name="project" value="projectTwo">
+                <label for="projectTwo"><button class='projectTwoNavCircle'>●</button></label>
+                <input class="sr-only" type="radio" id="projectThree" name="project" value="projectThree">
+                <label for="projectThree"><button class='projectThreeNavCircle'>●</button></label>
+                <input class="sr-only" type="radio" id="projectFour" name="project" value="projectFour">
+                <label for="projectFour"><button class='projectFourNavCircle'>●</button></label>
+            </form>
+        </div>
+        <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
+        <img class='trSquiggle' src="./assets/squiggleTransparent.png" alt="Just a little squiggly line"> -->
+    </section>
+    <section class='contact'>
+        <div class='wrapper'>
+            <div class='contactHolder'>
+                <div class="contactInfo">
+                    <h3>Get in Touch</h3>
+                    <address>
+                        <h4>Email Me <span>💌</span></h4>
+                        <p>tabitha.poeze@gmail.com</p>
+                        <h4>Book a Chat <span>☕️</span></h4>
+                        <p>Calendly link goes here</p>
+                        <h4>Follow Me</h4>
+                        <ul>
+                            <li><a class='.socialIcon' href='https://twitter.com/thetabsontabs'><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a class='.socialIcon' href='https://www.linkedin.com/in/tabitha-poeze/'><i class="fab fa-linkedin"></i></a></li>
+                            <li><a class='.socialIcon' href='https://github.com/tabsontabs'><i class="fab fa-github-square"></i></a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class='contactForm'>
+                    <p>Fill out the form below and I'll get back to you as soon as possible!</p>
+                    <form> 
+                        <label for='name' class='sr-only'>Your Name</label>
+                        <input type='text' id='name' name='Name' placeholder='Your Name' required='true'>
+                        <label for='email' class='sr-only'>Your Email</label>
+                        <input type='email' id='email' name='email' placeholder='Your Email' required='true'>
+                        <textarea id='textarea' required='true' name='message' placeholder='Your Message'></textarea>
+                        <button type='submit'>Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class='wrapper'>
+            <p>© Tabitha Poeze 2020 | Website design based on <a href='https://www.canva.com/templates/EADaoRachdE-pastel-bake-sale-charity-events-website/'>this Canva template</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>
