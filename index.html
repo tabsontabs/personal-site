@@ -20,25 +20,26 @@
             <h2>Portfolio Coming Soon <span alt="Emoji featuring 2 eyes looking to the side">👀</span></h2>
         </div>
         <!-- activate if you want stand alone header: -->
-        <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
+        <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
     </header>
-    <!-- <section>
-        <div class='about wrapper'>
+    <section class='about'>
+        <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
+        <div class='wrapper'>
             <div class='aboutText'>
                 <h3>About Me</h3>
-                <p>Web Developer 👩‍💻  Accessibility fanatic 🙆🏼‍♀️  Business school survivor 💼  Dachshund mom 🐶  Astronomy geek 🚀 Game enthusiast (Ticket to Ride and Unstable Unicorns are my favs) 🎲 Ammateur sommelier 🍷  Travel lover (22 countries and counting!) 🌎  I miss the old Kanye 💔</p>
+                <p>Web Developer 👩‍💻  Accessibility fanatic 🙆🏼‍♀️  Business school survivor 💼  Uses too many emojis 🤦🏼‍♀️ Dachshund mom 🐶  Astronomy geek 🚀 Game enthusiast (Ticket to Ride and Unstable Unicorns are my favs) 🎲 Ammateur sommelier 🍷  Travel lover (22 countries and counting!) 🌎  I miss the old Kanye 💔</p>
             </div>
             <img src="" alt="">
             <img src="" alt="">
         </div>
-    </section> -->
+    </section>
     <section class='projects'>
         <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
         <!-- <img class='trSquiggle' src="./assets/squiggleTransparent.png" alt="Just a little squiggly line"> -->
         <div class='projectsContent wrapper'>
             <h3>Projects</h3>
             <ul class='projectsGrid'>
-                <li>
+                <li class="myProjects fade">
                     <a class='projectLink' href='https://tabsontabs.github.io/tabitha-poeze-project-five'>
                         <img class='mockup' src="./assets/villagerFinderMockup.png" alt="">
                     </a>
@@ -47,18 +48,16 @@
                         <p>An app that allows you to filter through characters from Animal Crossing: New Horizons. Built using React and the <a class='apiLink' href='https://acnhapi.com/'>ACNH Api</a>.</p>
                     </div>
                 </li>
-                <li>
+                <li class='myProjects fade'>
                     <a href="">
-                        <img class='mockup' src="./assets/villagerFinderMockup.png" alt="">
+                        <img class='mockup' src="./assets/winetimeMockup.png" alt="">
                     </a>
-                    <div class='projectText'>
+                    <div id='displayTwo' class='projectText'>
                         <h4>It's Wine Time</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam aliquid fugiat distinctio sequi aspernatur,
-                            nesciunt esse perferendis magni veniam possimus soluta quo ea similique tenetur quisquam delectus nihil
-                            provident autem!</p>
+                        <p>A quiz app that provides the user with an LCBO wine recommendation based on their selected preferences. Built using Jquery featuring wine recos from my very own wine blog 🍷</p>
                     </div>
                 </li>
-                <li>
+                <li class='myProjects fade'>
                     <a class='projectLink' href="https://tabs-n-kat.github.io/katDeVriezeTabithaPoezeProject4/">
                         <img class='mockup' src="./assets/galleryMockup.png" alt="">
                     </a>
@@ -67,28 +66,23 @@
                         <p>An app that I pair programmed with another amazing developer, <a class='friendLink' href='https://katm.dev/'>Kat DeVrieze</a>. We used jQuery and the <a class='apiLink' href='https://metmuseum.github.io/'>Met Museum API</a>. The app allows you to view artworks and relevant information based on a search query.</p>
                     </div>
                 </li>
-                <li>
-                    <a href="">
-                        <img class='mockup' src="./assets/villagerFinderMockup.png" alt="">
+                <li class='myProjects fade'>
+                    <a href="https://tobikoberalphandnull.github.io/project-six/">
+                        <img class='mockup' src="./assets/watchlistsMockup.png" alt="">
                     </a>
                     <div class='projectText'>
                         <h4>My Watchlists</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam aliquid fugiat distinctio sequi aspernatur,
-                            nesciunt esse perferendis magni veniam possimus soluta quo ea similique tenetur quisquam delectus nihil
-                            provident autem!</p>
+                        <p>An app that I mob programmed with more awesome developers, <a class='friendLink' href='http://www.shondamoshis.com/'>Shonda Moshis</a>, <a class='friendLink' href='https://lawrencehebia.com/'>Lawrence Hebia</a>, and <a class='friendLink' href='https://ruiwd.me/'>Jerry Dong</a>. We used React, Firebase, and the <a class='apiLink' href='https://www.tvmaze.com/api'>TVmaze Api</a>.</p>
+                        <p class='p2'>The app allows you to search for TV shows and relevant information. You can also create your own watchlists, add TV shows to your lists, and rate TV shows within your lists.</p>
                     </div>
                 </li>
             </ul>
-            <form class='dotNav'>
-                <input class="sr-only" type="radio" id="projectOne" name="project" value="projectOne">
-                <label for="projectOne"><button class='projectOneNavCircle'>●</button></label>
-                <input class="sr-only" type="radio" id="projectTwo" name="project" value="projectTwo">
-                <label for="projectTwo"><button class='projectTwoNavCircle'>●</button></label>
-                <input class="sr-only" type="radio" id="projectThree" name="project" value="projectThree">
-                <label for="projectThree"><button class='projectThreeNavCircle'>●</button></label>
-                <input class="sr-only" type="radio" id="projectFour" name="project" value="projectFour">
-                <label for="projectFour"><button class='projectFourNavCircle'>●</button></label>
-            </form>
+            <div class='dotNav'>
+                <button class='dot' onclick="currentProject(1)">●</button>
+                <button class='dot' onclick="currentProject(2)">●</button>
+                <button class='dot' onclick="currentProject(3)">●</button>
+                <button class='dot' onclick="currentProject(4)">●</button>
+            </div>
         </div>
         <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
         <img class='trSquiggle' src="./assets/squiggleTransparent.png" alt="Just a little squiggly line"> -->
@@ -130,5 +124,6 @@
             <p>© Tabitha Poeze 2020 | Website design based on <a href='https://www.canva.com/templates/EADaoRachdE-pastel-bake-sale-charity-events-website/'>this Canva template</a>.</p>
         </div>
     </footer>
+    <script src='script.js'></script>
 </body>
 </html>

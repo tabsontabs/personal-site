@@ -332,11 +332,6 @@ header .circle:first-of-type {
   right: 82%;
 }
 
-header .circle:last-of-type {
-  top: 60%;
-  left: 80%;
-}
-
 @media (max-width: 900px) {
   header .headerTitle h1 {
     font-size: 4rem;
@@ -377,19 +372,6 @@ header .circle:last-of-type {
   .circle:last-of-type {
     left: 70%;
   }
-}
-
-.about {
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-}
-
-.about .circle {
-  height: 55%;
-  position: absolute;
-  left: 80%;
-  bottom: 85%;
 }
 
 .projects {

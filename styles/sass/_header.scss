@@ -42,10 +42,10 @@ header {
         }
 
         // activate if you want stand alone header:
-        // &:last-of-type {
-        //     top: 60%;
-        //     left: 80%;
-        // }
+        &:last-of-type {
+            top: 60%;
+            left: 80%;
+        }
     }
 }
 
