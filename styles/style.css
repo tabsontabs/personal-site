@@ -390,6 +390,74 @@ header .circle:last-of-type {
   position: absolute;
   left: 80%;
   bottom: 85%;
+  z-index: -10;
+}
+
+.about .aboutHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 10px solid #37393b;
+  -webkit-box-shadow: -20px 20px #93C2BC;
+          box-shadow: -20px 20px #93C2BC;
+  padding: 3rem 3rem 2rem 3rem;
+}
+
+.aboutText {
+  width: 45%;
+}
+
+.aboutText ul {
+  padding-top: 20px;
+  list-style-position: inside;
+}
+
+.aboutText li {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  padding-top: 7px;
+  padding-left: 15px;
+}
+
+.skills {
+  width: 45%;
+}
+
+.skills ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills li {
+  padding: 1.5rem;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills i {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+
+.skills h4 {
+  text-align: center;
 }
 
 .projects {
@@ -436,7 +504,13 @@ header .circle:last-of-type {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.projects .projectsContent ul .projectLink {
+  width: 80%;
 }
 
 .projects .projectsContent ul .projectLink:hover, .projects .projectsContent ul .projectLink:focus {
@@ -490,7 +564,7 @@ header .circle:last-of-type {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 3rem;
+  padding: 1rem 0 3rem 0;
 }
 
 .projects .dotNav button {

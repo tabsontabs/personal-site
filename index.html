@@ -16,8 +16,8 @@
         <div class='headerTitle headerWrapper'>
             <h1>Tabitha Poeze</h1>
             <img class='squiggle' src="./assets/squiggle.png" alt="Just a little squiggly line">
-            <!-- <h2>Web Developer Extraordinnaire <span>✨</span></h2> -->
-            <h2>Portfolio Coming Soon <span alt="Emoji featuring 2 eyes looking to the side">👀</span></h2>
+            <h2>Web Developer Extraordinnaire <span>✨</span></h2>
+            <!-- <h2>Portfolio Coming Soon <span alt="Emoji featuring 2 eyes looking to the side">👀</span></h2> -->
         </div>
         <!-- activate if you want stand alone header: -->
         <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
@@ -25,12 +25,77 @@
     <section class='about'>
         <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
         <div class='wrapper'>
-            <div class='aboutText'>
-                <h3>About Me</h3>
-                <p>Web Developer 👩‍💻  Accessibility fanatic 🙆🏼‍♀️  Business school survivor 💼  Uses too many emojis 🤦🏼‍♀️ Dachshund mom 🐶  Astronomy geek 🚀 Game enthusiast (Ticket to Ride and Unstable Unicorns are my favs) 🎲 Ammateur sommelier 🍷  Travel lover (22 countries and counting!) 🌎  I miss the old Kanye 💔</p>
+            <div class='aboutHolder'>
+                <div class='aboutText'>
+                    <h3>About Me</h3>
+                    <ul>
+                        <li>Web Developer 👩‍💻</li>
+                        <li>Accessibility fanatic 🙆🏼‍♀️</li>
+                        <li>Business school survivor 💼</li>
+                        <li>Uses too many emojis 🤦🏼‍♀️</li>
+                        <li>Dachshund mom 🐶</li>
+                        <li>Astronomy geek 🚀</li>
+                        <li>Game enthusiast (Ticket to Ride and Unstable Unicorns are my favs) 🎲</li>
+                        <li>Ammateur sommelier 🍷</li>
+                        <li>Travel lover (22 countries and counting!) 🌎</li>
+                        <li>I miss the old Kanye 💔</li>
+                    </ul>
+                    <!-- <p>Web Developer 👩‍💻  Accessibility fanatic 🙆🏼‍♀️  Business school survivor 💼  Uses too many emojis 🤦🏼‍♀️ Dachshund mom 🐶  Astronomy geek 🚀 Game enthusiast (Ticket to Ride and Unstable Unicorns are my favs) 🎲 Ammateur sommelier 🍷  Travel lover (22 countries and counting!) 🌎  I miss the old Kanye 💔</p> -->
+                </div>
+                <div class='skills'>
+                    <h3>Toolbox</h3>
+                    <ul>
+                        <li>
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML5</h4>
+                        </li>
+                        <li>
+                            <i class="fab fa-css3-alt"></i>
+                            <h4>CSS3</h4>
+                        </li>
+                        <li>
+                            <i class="fab fa-js-square"></i>
+                            <h4>Javascript</h4>
+                        </li>
+                        <li>
+                            <i></i>
+                            <h4>jQuery</h4>
+                        </li>
+                        <li>
+                            <i class="fab fa-react"></i>
+                            <h4>React</h4>
+                        </li>
+                        <li>
+                            <i></i>
+                            <h4>Firebase</h4>
+                        </li>
+                        <li>
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Responsive Design</h4>
+                        </li>
+                        <li>
+                            <i class="fas fa-code-branch"></i>
+                            <h4>Git</h4>
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i>
+                            <h4>Github</h4>
+                        </li>
+                        <li>
+                            <i class="fab fa-sass"></i>
+                            <h4>Sass</h4>
+                        </li>
+                        <li>
+                            <i></i>
+                            <h4>VSCode</h4>
+                        </li>
+                        <li>
+                            <i class="fas fa-people-carry"></i>
+                            <h4>Pair & Mob Programming</h4>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <img src="" alt="">
-            <img src="" alt="">
         </div>
     </section>
     <section class='projects'>
@@ -39,7 +104,7 @@
         <div class='projectsContent wrapper'>
             <h3>Projects</h3>
             <ul class='projectsGrid'>
-                <li class="myProjects fade">
+                <li class="myProjects">
                     <a class='projectLink' href='https://tabsontabs.github.io/tabitha-poeze-project-five'>
                         <img class='mockup' src="./assets/villagerFinderMockup.png" alt="">
                     </a>
@@ -48,8 +113,8 @@
                         <p>An app that allows you to filter through characters from Animal Crossing: New Horizons. Built using React and the <a class='apiLink' href='https://acnhapi.com/'>ACNH Api</a>.</p>
                     </div>
                 </li>
-                <li class='myProjects fade'>
-                    <a href="">
+                <li class='myProjects'>
+                    <a class='projectLink' href="">
                         <img class='mockup' src="./assets/winetimeMockup.png" alt="">
                     </a>
                     <div id='displayTwo' class='projectText'>
@@ -57,7 +122,7 @@
                         <p>A quiz app that provides the user with an LCBO wine recommendation based on their selected preferences. Built using Jquery featuring wine recos from my very own wine blog 🍷</p>
                     </div>
                 </li>
-                <li class='myProjects fade'>
+                <li class='myProjects'>
                     <a class='projectLink' href="https://tabs-n-kat.github.io/katDeVriezeTabithaPoezeProject4/">
                         <img class='mockup' src="./assets/galleryMockup.png" alt="">
                     </a>
@@ -66,8 +131,8 @@
                         <p>An app that I pair programmed with another amazing developer, <a class='friendLink' href='https://katm.dev/'>Kat DeVrieze</a>. We used jQuery and the <a class='apiLink' href='https://metmuseum.github.io/'>Met Museum API</a>. The app allows you to view artworks and relevant information based on a search query.</p>
                     </div>
                 </li>
-                <li class='myProjects fade'>
-                    <a href="https://tobikoberalphandnull.github.io/project-six/">
+                <li class='myProjects'>
+                    <a class='projectLink' href="https://tobikoberalphandnull.github.io/project-six/">
                         <img class='mockup' src="./assets/watchlistsMockup.png" alt="">
                     </a>
                     <div class='projectText'>
