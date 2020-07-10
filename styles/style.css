@@ -685,6 +685,7 @@ header .circle:last-of-type {
 
 .projects .dotNav button:focus {
   outline: none;
+  color: #93C2BC;
 }
 
 .projects .dotNav .dot:focus {
