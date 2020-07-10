@@ -33,6 +33,12 @@
         padding-top: 7px;
         padding-left: 15px;
     }
+    a {
+        font-weight: 700;
+        &:hover {
+            background-color: $accentColor;
+        }
+    }
 
 }
 
@@ -56,6 +62,11 @@
         i {
             font-size: 3rem;
             padding-bottom: 10px;
+        }
+
+        img {
+            width: 3rem;
+            padding-bottom: 11px;
         }
 
         h4 {

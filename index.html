@@ -7,6 +7,7 @@
     <title>Tabitha's Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/34aa087edc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -16,10 +17,8 @@
         <div class='headerTitle headerWrapper'>
             <h1>Tabitha Poeze</h1>
             <img class='squiggle' src="./assets/squiggle.png" alt="Just a little squiggly line">
-            <h2>Web Developer Extraordinnaire <span>✨</span></h2>
-            <!-- <h2>Portfolio Coming Soon <span alt="Emoji featuring 2 eyes looking to the side">👀</span></h2> -->
+            <h2>Front-End Web Deverloper <span>👩‍💻</span></h2>
         </div>
-        <!-- activate if you want stand alone header: -->
         <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
     </header>
     <section class='about'>
@@ -29,7 +28,7 @@
                 <div class='aboutText'>
                     <h3>About Me</h3>
                     <ul>
-                        <li>Web Developer 👩‍💻</li>
+                        <li>Named after <a href='https://bewitched.fandom.com/wiki/Tabitha_Stephens' target='_blank'>this witch</a> ✨</li>
                         <li>Accessibility fanatic 🙆🏼‍♀️</li>
                         <li>Business school survivor 💼</li>
                         <li>Uses too many emojis 🤦🏼‍♀️</li>
@@ -58,7 +57,7 @@
                             <h4>Javascript</h4>
                         </li>
                         <li>
-                            <i></i>
+                            <i class="devicon-jquery-plain"></i>
                             <h4>jQuery</h4>
                         </li>
                         <li>
@@ -66,12 +65,8 @@
                             <h4>React</h4>
                         </li>
                         <li>
-                            <i></i>
+                            <img src='./assets/firebase.svg'>
                             <h4>Firebase</h4>
-                        </li>
-                        <li>
-                            <i class="fas fa-mobile-alt"></i>
-                            <h4>Responsive Design</h4>
                         </li>
                         <li>
                             <i class="fas fa-code-branch"></i>
@@ -86,7 +81,11 @@
                             <h4>Sass</h4>
                         </li>
                         <li>
-                            <i></i>
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Responsive Design</h4>
+                        </li>
+                        <li>
+                            <i class="devicon-visualstudio-plain"></i>
                             <h4>VSCode</h4>
                         </li>
                         <li>
@@ -105,48 +104,50 @@
             <h3>Projects</h3>
             <ul class='projectsGrid'>
                 <li class="myProjects">
-                    <a class='projectLink' href='https://tabsontabs.github.io/tabitha-poeze-project-five'>
+                    <a class='projectLink' href='https://tabsontabs.github.io/tabitha-poeze-project-five' target='_blank'>
                         <img class='mockup' src="./assets/villagerFinderMockup.png" alt="">
                     </a>
                     <div class='projectText'>
-                        <h4><a class='projectLink' href='https://tabsontabs.github.io/tabitha-poeze-project-five/'>The Villager Finder</a></h4>
-                        <p>An app that allows you to filter through characters from Animal Crossing: New Horizons. Built using React and the <a class='apiLink' href='https://acnhapi.com/'>ACNH Api</a>.</p>
+                        <h4><a class='projectLink' href='https://tabsontabs.github.io/tabitha-poeze-project-five/' target='_blank'>The Villager Finder</a></h4>
+                        <p>An app that allows you to filter through characters from Animal Crossing: New Horizons. Built using React and the <a class='apiLink' href='https://acnhapi.com/' target='_blank'>ACNH Api</a>.</p>
                     </div>
                 </li>
                 <li class='myProjects'>
-                    <a class='projectLink' href="">
+                    <a class='projectLink' href="https://tabsontabs.github.io/tabithaPoezeProjectThree/" target='_blank'>
                         <img class='mockup' src="./assets/winetimeMockup.png" alt="">
                     </a>
                     <div id='displayTwo' class='projectText'>
-                        <h4>It's Wine Time</h4>
-                        <p>A quiz app that provides the user with an LCBO wine recommendation based on their selected preferences. Built using Jquery featuring wine recos from my very own wine blog 🍷</p>
+                        <h4><a class='projectLink' href='https://tabsontabs.github.io/tabithaPoezeProjectThree/' target='_blank'>It's Wine Time</a></h4>
+                        <p>A quiz app that provides you with an LCBO wine recommendation based on your selected preferences. Built using Jquery featuring wine recos from my very own <a class='friendLink' href='https://www.instagram.com/babiswineblog/' target='_blank'>wine blog</a>.</p>
                     </div>
                 </li>
                 <li class='myProjects'>
-                    <a class='projectLink' href="https://tabs-n-kat.github.io/katDeVriezeTabithaPoezeProject4/">
+                    <a class='projectLink' href="https://tabs-n-kat.github.io/katDeVriezeTabithaPoezeProject4/" target='_blank'>
                         <img class='mockup' src="./assets/galleryMockup.png" alt="">
                     </a>
                     <div class='projectText'>
-                        <h4>The Gallery Project</h4>
-                        <p>An app that I pair programmed with another amazing developer, <a class='friendLink' href='https://katm.dev/'>Kat DeVrieze</a>. We used jQuery and the <a class='apiLink' href='https://metmuseum.github.io/'>Met Museum API</a>. The app allows you to view artworks and relevant information based on a search query.</p>
+                        <h4><a class='projectLink' target='_blank' href="https://tabs-n-kat.github.io/katDeVriezeTabithaPoezeProject4/">The Gallery Project</a></h4>
+                        <p>An app that I pair programmed with another amazing developer, <a class='friendLink' href='https://katm.dev/' target='_blank'>Kat DeVrieze</a>. We used jQuery and the <a class='apiLink' href='https://metmuseum.github.io/'target='_blank'>Met Museum API</a>. The app allows you to view artworks and relevant information based on a search query.</p>
                     </div>
                 </li>
                 <li class='myProjects'>
-                    <a class='projectLink' href="https://tobikoberalphandnull.github.io/project-six/">
+                    <a class='projectLink' href="https://tobikoberalphandnull.github.io/project-six/" target='_blank'>
                         <img class='mockup' src="./assets/watchlistsMockup.png" alt="">
                     </a>
                     <div class='projectText'>
-                        <h4>My Watchlists</h4>
-                        <p>An app that I mob programmed with more awesome developers, <a class='friendLink' href='http://www.shondamoshis.com/'>Shonda Moshis</a>, <a class='friendLink' href='https://lawrencehebia.com/'>Lawrence Hebia</a>, and <a class='friendLink' href='https://ruiwd.me/'>Jerry Dong</a>. We used React, Firebase, and the <a class='apiLink' href='https://www.tvmaze.com/api'>TVmaze Api</a>.</p>
+                        <h4><a class='projectLink' target='_blank' href="https://tobikoberalphandnull.github.io/project-six/">My Watchlists</a></h4>
+                        <p>An app that I mob programmed with more awesome developers, <a class='friendLink' href='http://www.shondamoshis.com/' target='_blank'>Shonda Moshis</a>, <a class='friendLink' href='https://lawrencehebia.com/' target='_blank'>Lawrence Hebia</a>, and <a class='friendLink' href='https://ruiwd.me/' target='_blank'>Jerry Dong</a>. We used React, Firebase, and the <a class='apiLink' href='https://www.tvmaze.com/api'>TVmaze Api</a>.</p>
                         <p class='p2'>The app allows you to search for TV shows and relevant information. You can also create your own watchlists, add TV shows to your lists, and rate TV shows within your lists.</p>
                     </div>
                 </li>
             </ul>
             <div class='dotNav'>
+                <button class='prev' onClick="plusProjects(-1)"><i class="fas fa-arrow-alt-circle-left"></i></button>
                 <button class='dot' onclick="currentProject(1)">●</button>
                 <button class='dot' onclick="currentProject(2)">●</button>
                 <button class='dot' onclick="currentProject(3)">●</button>
                 <button class='dot' onclick="currentProject(4)">●</button>
+                <button class='next' onClick="plusProjects(1)"><i class="fas fa-arrow-alt-circle-right"></i></button>
             </div>
         </div>
         <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
@@ -164,15 +165,15 @@
                         <p>Calendly link goes here</p>
                         <h4>Follow Me</h4>
                         <ul>
-                            <li><a class='.socialIcon' href='https://twitter.com/thetabsontabs'><i class="fab fa-twitter-square"></i></a></li>
-                            <li><a class='.socialIcon' href='https://www.linkedin.com/in/tabitha-poeze/'><i class="fab fa-linkedin"></i></a></li>
-                            <li><a class='.socialIcon' href='https://github.com/tabsontabs'><i class="fab fa-github-square"></i></a></li>
+                            <li><a class='.socialIcon' href='https://twitter.com/thetabsontabs' target='_blank'><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a class='.socialIcon' href='https://www.linkedin.com/in/tabitha-poeze/' target='_blank'><i class="fab fa-linkedin"></i></a></li>
+                            <li><a class='.socialIcon' href='https://github.com/tabsontabs' target='_blank'><i class="fab fa-github-square"></i></a></li>
                         </ul>
                     </address>
                 </div>
                 <div class='contactForm'>
                     <p>Fill out the form below and I'll get back to you as soon as possible!</p>
-                    <form> 
+                    <form name='contact' method='POST' data-netifly='true'> 
                         <label for='name' class='sr-only'>Your Name</label>
                         <input type='text' id='name' name='Name' placeholder='Your Name' required='true'>
                         <label for='email' class='sr-only'>Your Email</label>
@@ -186,7 +187,7 @@
     </section>
     <footer>
         <div class='wrapper'>
-            <p>© Tabitha Poeze 2020 | Website design based on <a href='https://www.canva.com/templates/EADaoRachdE-pastel-bake-sale-charity-events-website/'>this Canva template</a>.</p>
+            <p>© Tabitha Poeze 2020 | Website design based on <a href='https://www.canva.com/templates/EADaoRachdE-pastel-bake-sale-charity-events-website/' target='_blank'>this Canva template</a>.</p>
         </div>
     </footer>
     <script src='script.js'></script>

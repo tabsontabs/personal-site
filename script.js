@@ -19,8 +19,8 @@ function showProjects(p) {
         projects[i].style.display = 'none';
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].class = dots[i].className.replace('active', '');
+        dots[i].className = dots[i].className.replace(' active', '');
     }
     projects[projectIndex - 1].style.display = 'flex';
-    dots[projectIndex - 1].class += 'active';
+    dots[projectIndex - 1].className += ' active';
 }

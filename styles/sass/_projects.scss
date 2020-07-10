@@ -26,6 +26,10 @@
                 justify-content: space-evenly;
             }
 
+            a {
+                font-weight: 700;
+            }
+
             .projectLink {
                 width: 80%;
             }
@@ -46,6 +50,7 @@
             h4 {
                 font-weight: 700;
                 padding: 1rem 0rem 1rem 0rem;
+                text-transform: uppercase;
             }
 
             .p2 {
@@ -90,10 +95,22 @@
             background-color: $mainBackgroundColor;
             color: $mainFontColor;
 
-            &:hover, &:focus {
+            &:hover {
                 color: $shadowColor;
+            }
+
+            &:focus {
                 outline: none;
             }
+        }
+
+        .dot:focus {
+            color: $shadowColor;
+            outline: none;
+        }
+
+        .active {
+            color: $shadowColor;
         }
     }
 }

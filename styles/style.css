@@ -423,6 +423,14 @@ header .circle:last-of-type {
   padding-left: 15px;
 }
 
+.aboutText a {
+  font-weight: 700;
+}
+
+.aboutText a:hover {
+  background-color: #ed8eb9;
+}
+
 .skills {
   width: 45%;
 }
@@ -454,6 +462,11 @@ header .circle:last-of-type {
 .skills i {
   font-size: 3rem;
   padding-bottom: 10px;
+}
+
+.skills img {
+  width: 3rem;
+  padding-bottom: 11px;
 }
 
 .skills h4 {
@@ -509,6 +522,10 @@ header .circle:last-of-type {
           justify-content: space-evenly;
 }
 
+.projects .projectsContent ul a {
+  font-weight: 700;
+}
+
 .projects .projectsContent ul .projectLink {
   width: 80%;
 }
@@ -529,6 +546,7 @@ header .circle:last-of-type {
 .projects .projectsContent ul h4 {
   font-weight: 700;
   padding: 1rem 0rem 1rem 0rem;
+  text-transform: uppercase;
 }
 
 .projects .projectsContent ul .p2 {
@@ -575,9 +593,21 @@ header .circle:last-of-type {
   color: #37393b;
 }
 
-.projects .dotNav button:hover, .projects .dotNav button:focus {
+.projects .dotNav button:hover {
+  color: #93C2BC;
+}
+
+.projects .dotNav button:focus {
+  outline: none;
+}
+
+.projects .dotNav .dot:focus {
   color: #93C2BC;
   outline: none;
+}
+
+.projects .dotNav .active {
+  color: #93C2BC;
 }
 
 .contact .contactHolder {
