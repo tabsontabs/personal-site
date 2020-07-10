@@ -1,4 +1,7 @@
 .contact {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
 
     .contactHolder {
         display: flex;
@@ -7,6 +10,22 @@
         padding: 2rem 1rem 2rem 1rem;
         border: 10px solid $mainFontColor;
         box-shadow: -20px 20px $shadowColor;
+    }
+
+    .circle {
+        position: absolute;
+        height: 55%;
+        z-index: -10;
+
+        &:first-of-type {
+            bottom: 70%;
+            left: 85%;
+        }
+
+        &:last-of-type {
+            top: 60%;
+            right: 80%;
+        }
     }
 }
 
@@ -104,3 +123,4 @@ form {
         }
     }
 }
+

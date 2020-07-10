@@ -388,9 +388,17 @@ header .circle:last-of-type {
 .about .circle {
   height: 55%;
   position: absolute;
+  z-index: -10;
+}
+
+.about .circle:first-of-type {
   left: 80%;
   bottom: 85%;
-  z-index: -10;
+}
+
+.about .circle:last-of-type {
+  right: 85%;
+  top: 70%;
 }
 
 .about .aboutHolder {
@@ -473,9 +481,66 @@ header .circle:last-of-type {
   text-align: center;
 }
 
+@media (max-width: 1000px) {
+  .about {
+    height: 150vh;
+  }
+  .about .aboutHolder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem;
+  }
+  .about .aboutHolder h3 {
+    font-size: 1.5rem;
+  }
+  .about .circle {
+    height: 36.75%;
+  }
+  .about .circle:first-of-type {
+    bottom: 90%;
+  }
+  .about .circle:last-of-type {
+    top: 80%;
+  }
+  .skills {
+    width: 100%;
+  }
+  .skills ul li {
+    padding: 1rem;
+  }
+  .aboutText {
+    width: 100%;
+  }
+  .aboutText ul {
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+  .aboutText li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .skills ul i {
+    font-size: 2rem;
+  }
+  .skills ul img {
+    width: 2rem;
+  }
+}
+
 .projects {
   position: relative;
-  height: auto;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects .projectsContent {
@@ -527,7 +592,7 @@ header .circle:last-of-type {
 }
 
 .projects .projectsContent ul .projectLink {
-  width: 80%;
+  width: 60%;
 }
 
 .projects .projectsContent ul .projectLink:hover, .projects .projectsContent ul .projectLink:focus {
@@ -564,11 +629,32 @@ header .circle:last-of-type {
 .projects .circle {
   position: absolute;
   height: 55%;
+  z-index: -10;
 }
 
 .projects .circle:first-of-type {
-  top: -5%;
-  right: -5%;
+  bottom: 75%;
+  right: 85%;
+}
+
+.projects .circle:last-of-type {
+  top: 75%;
+  left: 85%;
+}
+
+.projects .trSquiggle {
+  width: 15%;
+  position: absolute;
+}
+
+.projects .trSquiggle:nth-of-type(2) {
+  top: 10%;
+  left: -2%;
+}
+
+.projects .trSquiggle:nth-of-type(3) {
+  bottom: 10%;
+  right: -2%;
 }
 
 .projects .dotNav {
@@ -582,7 +668,7 @@ header .circle:last-of-type {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem 0 3rem 0;
+  padding: 1rem 0 0 0;
 }
 
 .projects .dotNav button {
@@ -610,6 +696,12 @@ header .circle:last-of-type {
   color: #93C2BC;
 }
 
+.contact {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
 .contact .contactHolder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -621,6 +713,22 @@ header .circle:last-of-type {
   border: 10px solid #37393b;
   -webkit-box-shadow: -20px 20px #93C2BC;
           box-shadow: -20px 20px #93C2BC;
+}
+
+.contact .circle {
+  position: absolute;
+  height: 55%;
+  z-index: -10;
+}
+
+.contact .circle:first-of-type {
+  bottom: 70%;
+  left: 85%;
+}
+
+.contact .circle:last-of-type {
+  top: 60%;
+  right: 80%;
 }
 
 .contactInfo address {
@@ -733,8 +841,12 @@ form button:hover, form button:focus {
 
 footer {
   background-color: #93C2BC;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
+  font-weight: 400;
+}
+
+footer span {
   font-weight: 700;
 }
 

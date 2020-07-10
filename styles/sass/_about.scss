@@ -6,9 +6,17 @@
     .circle {
         height: 55%;
         position: absolute;
-        left: 80%;
-        bottom: 85%;
         z-index: -10;
+
+        &:first-of-type {
+            left: 80%;
+            bottom: 85%;
+        }
+
+        &:last-of-type {
+            right: 85%;
+            top: 70%;
+        }
     }
 
     .aboutHolder {
@@ -74,3 +82,65 @@
         }
 }
 
+@media (max-width: 1000px) {
+    .about {
+        height: 150vh;
+
+        .aboutHolder {
+            flex-direction: column;
+            padding: 2rem;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        .circle {
+            height: 36.75%;
+
+            &:first-of-type {
+                bottom: 90%;
+            }
+
+            &:last-of-type {
+                top: 80%;
+            }
+        }
+    }
+
+    .skills {
+        width: 100%;
+
+        ul {
+
+            li {
+                padding: 1rem;
+            }
+        }
+    }
+
+    .aboutText {
+        width: 100%;
+        
+        ul {
+            padding-top: 5px;
+            padding-bottom: 20px;
+        }
+        li {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .skills {
+        ul {
+            i {
+                font-size: 2rem;
+            }
+            img {
+                width: 2rem;
+            }
+        }
+    }
+}
