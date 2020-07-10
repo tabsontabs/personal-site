@@ -745,6 +745,14 @@ header .circle:last-of-type {
   padding: 5px 0 5px 0;
 }
 
+.contactInfo address .emailMe:hover {
+  background-color: #ed8eb9;
+}
+
+.contactInfo address .bookAChat:hover {
+  background-color: #ed8eb9;
+}
+
 .contactInfo address ul {
   list-style: none;
   display: -webkit-box;

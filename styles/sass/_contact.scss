@@ -40,7 +40,15 @@
         }
 
         p {
-            padding: 5px 0 5px 0;
+            padding: 5px 0 5px 0
+        }
+
+        .emailMe:hover {
+            background-color: $accentColor;
+        }
+
+        .bookAChat:hover {
+            background-color: $accentColor;
         }
 
         ul {
