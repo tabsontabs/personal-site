@@ -24,3 +24,20 @@ function showProjects(p) {
     projects[projectIndex - 1].style.display = 'flex';
     dots[projectIndex - 1].className += ' active';
 }
+
+function toggleNav() {
+    let nv = document.getElementById('navDisplay');
+    let imgNav = document.getElementById('navToggleImg');
+
+    if (nv.style.display === 'flex') {
+        (nv.style.display = 'none') 
+    } else {
+        nv.style.display = 'flex';
+    }
+
+    if (nv.style.display === 'flex') {
+        (imgNav.style.opacity = 1)
+    } else {
+        imgNav.style.opacity = 0.5;
+    }
+}

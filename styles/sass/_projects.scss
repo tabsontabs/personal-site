@@ -1,6 +1,5 @@
 .projects {
     position: relative;
-    overflow: hidden;
     display: flex;
     align-items: center;
 
@@ -69,36 +68,37 @@
         }
     }
 
-    .circle {
-        position: absolute;
-        height: 55%;
-        z-index: -10;
+    // keeping this here in case I add circle design back in:
+    // .circle {
+    //     position: absolute;
+    //     height: 55%;
+    //     z-index: -10;
 
-        &:first-of-type {
-            bottom: 75%;
-            right: 85%;
-        }
+    //     &:first-of-type {
+    //         bottom: 75%;
+    //         right: 85%;
+    //     }
 
-        &:last-of-type {
-            top: 75%;
-            left: 85%;
-        }
-    }
+    //     &:last-of-type {
+    //         top: 75%;
+    //         left: 85%;
+    //     }
+    // }
 
-    .trSquiggle {
-        width: 15%;
-        position: absolute;
+    // .trSquiggle {
+    //     width: 15%;
+    //     position: absolute;
 
-        &:nth-of-type(2) {
-            top: 10%;
-            left: -2%;
-        }
+    //     &:nth-of-type(2) {
+    //         top: 10%;
+    //         left: -2%;
+    //     }
 
-        &:nth-of-type(3) {
-            bottom: 10%;
-            right: -2%;
-        }
-    }
+    //     &:nth-of-type(3) {
+    //         bottom: 10%;
+    //         right: -2%;
+    //     }
+    // }
 
     .dotNav {
         display: flex;
@@ -115,10 +115,16 @@
 
             &:hover {
                 color: $shadowColor;
+                cursor: pointer;
             }
             &:focus {
                 outline: none;
+                color: $shadowColor;
             }
+        }
+
+        .prev, .next {
+            font-size: 2rem;
         }
 
         .prevMobile, .nextMobile {
@@ -179,9 +185,9 @@
             ul {
                 font-size: 1rem;
                 padding: 3rem 0 0 0;
+                letter-spacing: 2px;
 
                 .projectText {
-                    width: 100%;
                     padding-bottom: 0;
                 }
             }

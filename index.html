@@ -14,16 +14,25 @@
 </head>
 
 <body>
-    <header>
+    <header id='homeScroll'>
+        <button class='navImg' onClick='toggleNav()'><img id='navToggleImg' src='./assets/wavingEmojiGrey.png'></button>
+        <nav id='navDisplay'>
+            <ul>
+                <li><a href='#homeScroll'>Home</a></li>
+                <li><a href='#aboutScroll'>About</a></li>
+                <li><a href='#projectsScroll'>Projects</a></li>
+                <li><a href='#contactScroll'>Contact</a></li>
+            </ul>
+        </nav>
         <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
         <div class='headerTitle headerWrapper'>
             <h1>Tabitha Poeze</h1>
             <img class='squiggle' src="./assets/squiggle.png" alt="Just a little squiggly line">
-            <h2>Front-End Web Developer <span alt='emoji featuring a woman using a laptop'>👩‍💻</span></h2>
+            <h2>Front-End Web Developer <span alt='emoji featuring a woman using a laptop'>👩🏻‍💻</span></h2>
         </div>
         <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
     </header>
-    <section class='about'>
+    <section class='about' id='aboutScroll'>
         <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
         <div class='wrapper'>
             <div class='aboutHolder'>
@@ -31,9 +40,9 @@
                     <h3>About Me</h3>
                     <ul>
                         <li>Named after <a href='https://bewitched.fandom.com/wiki/Tabitha_Stephens' target='_blank'>this witch</a> ✨</li>
-                        <li>Accessibility fanatic <span alt='an emoji featuring a woman with her hands in the air'>🙆🏼‍♀️</span></li>
+                        <li>Accessibility fanatic <span alt='an emoji featuring a woman with her hands in the air'>🙆🏻‍♀️</span></li>
                         <li>Business school survivor <span alt='an emoji featuring a briefcase'>💼</span></li>
-                        <li>Uses too many emojis <span alt='an emoji featuring a woman face palming'>🤦🏼‍♀️</span></li>
+                        <li>Uses too many emojis <span alt='an emoji featuring a woman face palming'>🤦🏻‍♀️</span></li>
                         <li>Dachshund mom <span alt='an emoji feauring a puppy'>🐶</span></li>
                         <li>Moderate sci-fi geek <span alt='an emoji featuring a rocketship'>🚀</span></li>
                         <li>Game enthusiast (Ticket to Ride and Unstable Unicorns are my favs) <span alt='an emoji featuring a game die'>🎲</span></li>
@@ -42,7 +51,7 @@
                         <li>I miss the old Kanye <span alt='an emoji featuring a cracked heart'>💔</span></li>
                     </ul>
                     <!-- paragraph style of my about text: -->
-                    <!-- <p>Web Developer 👩‍💻  Accessibility fanatic 🙆🏼‍♀️  Business school survivor 💼  Uses too many emojis 🤦🏼‍♀️ Dachshund mom 🐶  Astronomy geek 🚀 Game enthusiast (Ticket to Ride and Unstable Unicorns are my favs) 🎲 Ammateur sommelier 🍷  Travel lover (22 countries and counting!) 🌎  I miss the old Kanye 💔</p> -->
+                    <!-- <p>Web Developer 👩‍💻  Accessibility fanatic 🙆🏼‍♀️  Business school survivor 💼  Uses too many emojis 🤦🏻‍♀️ Dachshund mom 🐶  Astronomy geek 🚀 Game enthusiast (Ticket to Ride and Unstable Unicorns are my favs) 🎲 Ammateur sommelier 🍷  Travel lover (22 countries and counting!) 🌎  I miss the old Kanye 💔</p> -->
                 </div>
                 <div class='skills'>
                     <h3>My Toolbox</h3>
@@ -101,7 +110,7 @@
         </div>
         <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
     </section>
-    <section class='projects'>
+    <section class='projects' id='projectsScroll'>
         <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
         <img class='trSquiggle' src="./assets/squiggleTransparent.png" alt="Just a little squiggly line"> -->
         <div class='projectsContent wrapper'>
@@ -122,7 +131,7 @@
                     </a>
                     <div id='displayTwo' class='projectText'>
                         <h4><a class='projectLink' href='https://tabsontabs.github.io/tabithaPoezeProjectThree/' target='_blank'>It's Wine Time</a></h4>
-                        <p>A quiz app that provides you with an LCBO wine recommendation based on your selected preferences. Built using Jquery featuring wine recos from my very own <a class='friendLink' href='https://www.instagram.com/babiswineblog/' target='_blank'>wine blog</a>.</p>
+                        <p>A quiz app that provides you with an LCBO wine recommendation based on your selected preferences. Built using jQuery featuring wine recos from my very own little <a class='friendLink' href='https://www.instagram.com/babiswineblog/' target='_blank'>wine blog</a>.</p>
                     </div>
                 </li>
                 <li class='myProjects'>
@@ -136,12 +145,12 @@
                 </li>
                 <li class='myProjects'>
                     <a class='projectLink' href="https://tobikoberalphandnull.github.io/project-six/" target='_blank'>
-                        <img class='mockup' src="./assets/watchlistsMockup.png" alt="a laptop and mobile phone displaying My Watchlists application">
+                        <img class='mockup' src="./assets/watchlistsMockup.png" alt="a laptop and mobile phone displaying My Watchlist application">
                     </a>
                     <div class='projectText'>
-                        <h4><a class='projectLink' target='_blank' href="https://tobikoberalphandnull.github.io/project-six/">My Watchlists</a></h4>
-                        <p>An app that I mob programmed with more awesome developers, <a class='friendLink' href='http://www.shondamoshis.com/' target='_blank'>Shonda Moshis</a>, <a class='friendLink' href='https://lawrencehebia.com/' target='_blank'>Lawrence Hebia</a>, and <a class='friendLink' href='https://ruiwd.me/' target='_blank'>Jerry Dong</a>. We used React, Firebase, and the <a class='apiLink' href='https://www.tvmaze.com/api'>TVmaze Api</a>.</p>
-                        <p class='p2'>The app allows you to search for TV shows and relevant information. You can also create your own watchlists, add TV shows to your lists, and rate TV shows within your lists.</p>
+                        <h4><a class='projectLink' target='_blank' href="https://tobikoberalphandnull.github.io/project-six/">My Watchlist</a></h4>
+                        <p>An app that I mob programmed with these awesome developers - <a class='friendLink' href='http://www.shondamoshis.com/' target='_blank'>Shonda Moshis</a>, <a class='friendLink' href='https://lawrencehebia.com/' target='_blank'>Lawrence Hebia</a>, and <a class='friendLink' href='https://ruiwd.me/' target='_blank'>Jerry Dong</a>. We used React, Firebase, and the <a class='apiLink' href='https://www.tvmaze.com/api'>TVmaze Api</a>.</p>
+                        <p class='p2'>The app allows you to search for TV shows and relevant information. You can also create your own "watchlists", add TV shows to your lists, and rate TV shows within your lists.</p>
                     </div>
                 </li>
             </ul>
@@ -159,7 +168,7 @@
         <!-- <img class='trSquiggle' src="./assets/squiggleTransparent.png" alt="Just a little squiggly line">
         <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
     </section>
-    <section class='contact'>
+    <section class='contact' id='contactScroll'>
         <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
         <div class='wrapper'>
             <div class='contactHolder'>
@@ -180,7 +189,7 @@
                 </div>
                 <div class='contactForm'>
                     <p>Fill out the form below and I'll get back to you as soon as possible!</p>
-                    <form name='contactMe' netifly> 
+                    <form name="contactMe" data-netifly="true"> 
                         <label for='name' class='sr-only'>Your Name</label>
                         <input type='text' id='name' name='name' placeholder='Your Name' required='true'>
                         <label for='email' class='sr-only'>Your Email</label>

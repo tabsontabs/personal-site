@@ -5,21 +5,22 @@
     flex-direction: row;
     align-items: center;
 
-    .circle {
-        height: 55%;
-        position: absolute;
-        z-index: -10;
+    // keeping this here in case I use the circle design:
+    // .circle {
+    //     height: 55%;
+    //     position: absolute;
+    //     z-index: -10;
 
-        &:first-of-type {
-            left: 80%;
-            bottom: 85%;
-        }
+    //     &:first-of-type {
+    //         left: 80%;
+    //         bottom: 85%;
+    //     }
 
-        &:last-of-type {
-            right: 85%;
-            top: 70%;
-        }
-    }
+    //     &:last-of-type {
+    //         right: 85%;
+    //         top: 70%;
+    //     }
+    // }
 
     .aboutHolder {
         display: flex;
@@ -158,27 +159,17 @@
 }
 
 @media (max-width: 450px) {
-
-    .aboutText {
-        margin-top: 15px;
-    }
-    .skills {
-        margin-top: 15px;
-        ul{
-            li{
-                width: calc(100%/3);
-            }
-        }
-    }
-}
-
-@media (max-width: 450px) {
     
     .aboutText {
         margin-top: 5px;
     }
     .skills {
         margin-top: 5px;
+        ul{
+            li{
+                width: calc(100%/3);
+            }
+        }
     }
 }
 

@@ -1,8 +1,7 @@
 header {
     display: flex;
     align-items: center;
-    overflow: hidden;
-    padding: 8rem 0 8rem 0;
+    flex-direction: column;
 
     .headerTitle {
         display: flex;
@@ -12,7 +11,8 @@ header {
         height: 60vh;
         border: 10px solid $mainFontColor;
         box-shadow: 30px 30px $shadowColor;
-        z-index: 100;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
 
         h1 {
             @include font(5.5rem, 10px, 900);
