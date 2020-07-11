@@ -1,9 +1,8 @@
 header {
-    height: 100vh;
     display: flex;
     align-items: center;
-    position: relative;
     overflow: hidden;
+    padding: 8rem 0 8rem 0;
 
     .headerTitle {
         display: flex;
@@ -32,24 +31,22 @@ header {
         }
     }
 
-    .circle {
-        position: absolute;
-        height: 55%;
+    // keeping this here just in case I want to add the circle design back in:
+    // .circle {
+    //     position: absolute;
+    //     height: 55%;
 
-        &:first-of-type {
-            bottom: 59%;
-            right: 82%;
-        }
+    //     &:first-of-type {
+    //         bottom: 59%;
+    //         right: 82%;
+    //     }
 
-        // activate if you want stand alone header:
-        &:last-of-type {
-            top: 60%;
-            left: 80%;
-        }
-    }
+    //     &:last-of-type {
+    //         top: 60%;
+    //         left: 80%;
+    //     }
+    // }
 }
-
-
 
 // header media queries
 

@@ -1,7 +1,9 @@
 .about {
-    height: 100vh;
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
     .circle {
         height: 55%;
@@ -22,36 +24,42 @@
     .aboutHolder {
         display: flex;
         justify-content: space-between;
-        border: 10px solid $mainFontColor;
-        box-shadow: -20px 20px $shadowColor;
-        padding: 3rem 3rem 2rem 3rem;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 
 .aboutText {
-    width: 45%;
+    width: 47%;
+    border: 10px solid $mainFontColor;
+    box-shadow: -20px -20px $shadowColor;
+    padding: 3rem 3rem 2rem 3rem;
     
     ul {
         padding-top: 20px;
-        // list-style: none;
         list-style-position: inside;
-    }
-    li {
-        @include font(1.1rem, 2px, 400);
-        padding-top: 7px;
-        padding-left: 15px;
-    }
-    a {
+
+        li {
+            @include font(1.1rem, 2px, 400);
+            padding-top: 7px;
+            padding-left: 15px;
+        }
+
+        a {
         font-weight: 700;
-        &:hover {
-            background-color: $accentColor;
+
+            &:hover {
+                background-color: $accentColor;
+            }
         }
     }
-
 }
 
 .skills {
-    width: 45%;
+    width: 47%;
+    border: 10px solid $mainFontColor;
+    box-shadow: 20px 20px $shadowColor;
+    padding: 3rem 3rem 2rem 3rem;
 
     ul {
         list-style: none;
@@ -83,63 +91,105 @@
 }
 
 @media (max-width: 1000px) {
+
     .about {
-        height: 150vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
         .aboutHolder {
-            flex-direction: column;
-            padding: 2rem;
-
             h3 {
                 font-size: 1.5rem;
             }
         }
-        
-        .circle {
-            height: 36.75%;
-
-            &:first-of-type {
-                bottom: 90%;
-            }
-
-            &:last-of-type {
-                top: 80%;
-            }
-        }
+    }
+  
+    .aboutText {
+        width: 55%;
+        padding: 1rem;
+        align-self: center;
     }
 
     .skills {
-        width: 100%;
+        width: 40%;
+        padding: 1rem;
 
-        ul {
+        h3 {
+            padding-bottom: 15px;
+        }
 
-            li {
+        ul{
+
+            li{
                 padding: 1rem;
+                width: calc(100%/3)
             }
-        }
-    }
-
-    .aboutText {
-        width: 100%;
-        
-        ul {
-            padding-top: 5px;
-            padding-bottom: 20px;
-        }
-        li {
-            font-size: 1rem;
         }
     }
 }
 
-@media (max-width: 700px) {
-    .skills {
+@media (max-width: 800px) {
+    .about {
+        .aboutHolder {
+            flex-direction: column;
+        }
+        
+    }
+    .aboutText {
+        width: 100%;
+        margin-bottom: 25px;
+
         ul {
-            i {
-                font-size: 2rem;
+            padding-bottom: 10px;
+        }
+    }
+
+    .skills {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 25px;
+        
+        ul{
+            li{
+                width: 25%;
             }
-            img {
-                width: 2rem;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+
+    .aboutText {
+        margin-top: 15px;
+    }
+    .skills {
+        margin-top: 15px;
+        ul{
+            li{
+                width: calc(100%/3);
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .aboutText {
+        margin-top: 5px;
+    }
+    .skills {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .aboutText {
+        ul {
+            list-style: none;
+            li {
+                @include font(1rem, 1px, 400);
+                padding-top: 10px;
             }
         }
     }

@@ -1,6 +1,5 @@
 .projects {
     position: relative;
-    height: 100vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -117,16 +116,24 @@
             &:hover {
                 color: $shadowColor;
             }
-
             &:focus {
                 outline: none;
-                color: $shadowColor;
             }
         }
 
-        .dot:focus {
-            color: $shadowColor;
-            outline: none;
+        .prevMobile, .nextMobile {
+            position: absolute;
+            top: 45%;
+            font-size: 3rem;
+            display: none;
+        }
+
+        .prevMobile {
+            left: 5%;
+        }
+
+        .nextMobile {
+            right: 5%;
         }
 
         .active {
@@ -136,3 +143,111 @@
 }
 
 
+@media (max-width: 1000px) {
+    .projects {
+        .projectsContent {
+            h3 {
+                padding: 1rem 10rem;
+            }
+            ul {
+                li {
+                    flex-direction: column;
+                }
+                .projectLink {
+                    width: 90%;
+                }
+                .projectText {
+                    width: 100%;
+                }
+            }
+        }
+
+        .dotNav {
+            .prevMobile, .nextMobile {
+                display: block;
+            }
+            .prev, .next {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .projects {
+        .projectsContent {
+            ul {
+                font-size: 1rem;
+                padding: 3rem 0 0 0;
+
+                .projectText {
+                    width: 100%;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .projects {
+        .projectsContent {
+            h3 {
+                padding: 1rem 5rem;
+            }
+        }
+        .dotNav {
+            .prevMobile {
+                left: 2%;
+            }
+            
+            .nextMobile {
+                right: 2%;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .projects {
+        .projectsContent {
+            ul {
+                .projectText {
+                    width: 70%;
+                }
+            }
+        }
+        .dotNav {
+            .prevMobile, .nextMobile {
+                top: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .projects {
+        .projectsContent {
+            h3 {
+                padding: 1rem 2rem;
+                font-size: 1.5rem;
+            }
+            ul {
+                .projectText {
+                    width: 100%;
+                }
+                .projectLink {
+                    width: 100%;
+                }
+            }
+        }
+        .dotNav {
+            .prevMobile, .nextMobile {
+                display: none;
+            }
+            .prev, .next {
+                display: block;
+            }
+        }
+    }
+}

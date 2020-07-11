@@ -1,7 +1,5 @@
 .contact {
-    height: 100vh;
     position: relative;
-    overflow: hidden;
 
     .contactHolder {
         display: flex;
@@ -10,6 +8,7 @@
         padding: 2rem 1rem 2rem 1rem;
         border: 10px solid $mainFontColor;
         box-shadow: -20px 20px $shadowColor;
+        font-size: 1.1rem;
     }
 
     .circle {
@@ -18,13 +17,13 @@
         z-index: -10;
 
         &:first-of-type {
-            bottom: 70%;
-            left: 85%;
+            top: 55%;
+            left: 80%;
         }
 
         &:last-of-type {
-            top: 60%;
-            right: 80%;
+            bottom: 75%;
+            right: 85%;
         }
     }
 }
@@ -87,6 +86,7 @@
             text-align: center;
             padding-bottom: 1.5rem;
             padding-top: 0.5rem;
+            font-size: 1.1rem;
         }
 }
 
@@ -132,3 +132,74 @@ form {
     }
 }
 
+@media (max-width: 800px) {
+
+    .contact{
+        .contactHolder {
+            flex-direction: column;
+            padding: 2rem 3rem;
+            font-size: 1.3rem;
+            margin: 3rem 0 5rem 0;
+
+            .contactInfo {
+                width: 100%;
+
+                h4 {
+                    font-size: 1.5rem;
+                    padding-bottom: 5px;
+                }
+
+                i {
+                    font-size: 3rem;
+                }
+            }
+
+            .contactForm {
+                width: 100%;
+
+                p {
+                    padding-top: 1.5rem;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        form {
+            button {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .contact{
+        .contactHolder {
+            padding: 1rem 1.5rem;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+@media (max-width: 400px) {
+    .contact{
+        .contactHolder {
+            padding: 1rem 1rem;
+            font-size: 1rem;
+            .contactInfo{
+                h3 {
+                    font-size: 1.5rem;
+                }
+                h4 {
+                    font-size: 1rem;
+                    padding-bottom: 2px;
+                }
+            }
+            .contactForm{
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

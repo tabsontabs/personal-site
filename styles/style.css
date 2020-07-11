@@ -270,15 +270,14 @@ h3 {
 }
 
 header {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
   overflow: hidden;
+  padding: 8rem 0 8rem 0;
 }
 
 header .headerTitle {
@@ -320,21 +319,6 @@ header .headerTitle h2 {
   font-weight: 400;
   text-transform: uppercase;
   padding: 0 1rem 2rem 1rem;
-}
-
-header .circle {
-  position: absolute;
-  height: 55%;
-}
-
-header .circle:first-of-type {
-  bottom: 59%;
-  right: 82%;
-}
-
-header .circle:last-of-type {
-  top: 60%;
-  left: 80%;
 }
 
 @media (max-width: 900px) {
@@ -380,9 +364,18 @@ header .circle:last-of-type {
 }
 
 .about {
-  height: 100vh;
   overflow: hidden;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about .circle {
@@ -408,14 +401,16 @@ header .circle:last-of-type {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 10px solid #37393b;
-  -webkit-box-shadow: -20px 20px #93C2BC;
-          box-shadow: -20px 20px #93C2BC;
-  padding: 3rem 3rem 2rem 3rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .aboutText {
-  width: 45%;
+  width: 47%;
+  border: 10px solid #37393b;
+  -webkit-box-shadow: -20px -20px #93C2BC;
+          box-shadow: -20px -20px #93C2BC;
+  padding: 3rem 3rem 2rem 3rem;
 }
 
 .aboutText ul {
@@ -423,7 +418,7 @@ header .circle:last-of-type {
   list-style-position: inside;
 }
 
-.aboutText li {
+.aboutText ul li {
   font-size: 1.1rem;
   letter-spacing: 2px;
   font-weight: 400;
@@ -431,16 +426,20 @@ header .circle:last-of-type {
   padding-left: 15px;
 }
 
-.aboutText a {
+.aboutText ul a {
   font-weight: 700;
 }
 
-.aboutText a:hover {
+.aboutText ul a:hover {
   background-color: #ed8eb9;
 }
 
 .skills {
-  width: 45%;
+  width: 47%;
+  border: 10px solid #37393b;
+  -webkit-box-shadow: 20px 20px #93C2BC;
+          box-shadow: 20px 20px #93C2BC;
+  padding: 3rem 3rem 2rem 3rem;
 }
 
 .skills ul {
@@ -483,57 +482,99 @@ header .circle:last-of-type {
 
 @media (max-width: 1000px) {
   .about {
-    height: 150vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
+  .about .aboutHolder h3 {
+    font-size: 1.5rem;
+  }
+  .aboutText {
+    width: 55%;
+    padding: 1rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .skills {
+    width: 40%;
+    padding: 1rem;
+  }
+  .skills h3 {
+    padding-bottom: 15px;
+  }
+  .skills ul li {
+    padding: 1rem;
+    width: calc(100%/3);
+  }
+}
+
+@media (max-width: 800px) {
   .about .aboutHolder {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 2rem;
-  }
-  .about .aboutHolder h3 {
-    font-size: 1.5rem;
-  }
-  .about .circle {
-    height: 36.75%;
-  }
-  .about .circle:first-of-type {
-    bottom: 90%;
-  }
-  .about .circle:last-of-type {
-    top: 80%;
-  }
-  .skills {
-    width: 100%;
-  }
-  .skills ul li {
-    padding: 1rem;
   }
   .aboutText {
     width: 100%;
+    margin-bottom: 25px;
   }
   .aboutText ul {
-    padding-top: 5px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
-  .aboutText li {
-    font-size: 1rem;
+  .skills {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 25px;
+  }
+  .skills ul li {
+    width: 25%;
   }
 }
 
-@media (max-width: 700px) {
-  .skills ul i {
-    font-size: 2rem;
+@media (max-width: 450px) {
+  .aboutText {
+    margin-top: 15px;
   }
-  .skills ul img {
-    width: 2rem;
+  .skills {
+    margin-top: 15px;
+  }
+  .skills ul li {
+    width: calc(100%/3);
+  }
+}
+
+@media (max-width: 450px) {
+  .aboutText {
+    margin-top: 5px;
+  }
+  .skills {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .aboutText ul {
+    list-style: none;
+  }
+  .aboutText ul li {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding-top: 10px;
   }
 }
 
 .projects {
   position: relative;
-  height: 100vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -685,22 +726,104 @@ header .circle:last-of-type {
 
 .projects .dotNav button:focus {
   outline: none;
-  color: #93C2BC;
 }
 
-.projects .dotNav .dot:focus {
-  color: #93C2BC;
-  outline: none;
+.projects .dotNav .prevMobile, .projects .dotNav .nextMobile {
+  position: absolute;
+  top: 45%;
+  font-size: 3rem;
+  display: none;
+}
+
+.projects .dotNav .prevMobile {
+  left: 5%;
+}
+
+.projects .dotNav .nextMobile {
+  right: 5%;
 }
 
 .projects .dotNav .active {
   color: #93C2BC;
 }
 
+@media (max-width: 1000px) {
+  .projects .projectsContent h3 {
+    padding: 1rem 10rem;
+  }
+  .projects .projectsContent ul li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .projectsContent ul .projectLink {
+    width: 90%;
+  }
+  .projects .projectsContent ul .projectText {
+    width: 100%;
+  }
+  .projects .dotNav .prevMobile, .projects .dotNav .nextMobile {
+    display: block;
+  }
+  .projects .dotNav .prev, .projects .dotNav .next {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .projects .projectsContent ul {
+    font-size: 1rem;
+    padding: 3rem 0 0 0;
+  }
+  .projects .projectsContent ul .projectText {
+    width: 100%;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .projects .projectsContent h3 {
+    padding: 1rem 5rem;
+  }
+  .projects .dotNav .prevMobile {
+    left: 2%;
+  }
+  .projects .dotNav .nextMobile {
+    right: 2%;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects .projectsContent ul .projectText {
+    width: 70%;
+  }
+  .projects .dotNav .prevMobile, .projects .dotNav .nextMobile {
+    top: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .projects .projectsContent h3 {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+  .projects .projectsContent ul .projectText {
+    width: 100%;
+  }
+  .projects .projectsContent ul .projectLink {
+    width: 100%;
+  }
+  .projects .dotNav .prevMobile, .projects .dotNav .nextMobile {
+    display: none;
+  }
+  .projects .dotNav .prev, .projects .dotNav .next {
+    display: block;
+  }
+}
+
 .contact {
-  height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 
 .contact .contactHolder {
@@ -714,6 +837,7 @@ header .circle:last-of-type {
   border: 10px solid #37393b;
   -webkit-box-shadow: -20px 20px #93C2BC;
           box-shadow: -20px 20px #93C2BC;
+  font-size: 1.1rem;
 }
 
 .contact .circle {
@@ -723,13 +847,13 @@ header .circle:last-of-type {
 }
 
 .contact .circle:first-of-type {
-  bottom: 70%;
-  left: 85%;
+  top: 55%;
+  left: 80%;
 }
 
 .contact .circle:last-of-type {
-  top: 60%;
-  right: 80%;
+  bottom: 75%;
+  right: 85%;
 }
 
 .contactInfo address {
@@ -797,6 +921,7 @@ header .circle:last-of-type {
   text-align: center;
   padding-bottom: 1.5rem;
   padding-top: 0.5rem;
+  font-size: 1.1rem;
 }
 
 form {
@@ -846,6 +971,62 @@ form button {
 form button:hover, form button:focus {
   background-color: #37393b;
   color: #FEF7F3;
+}
+
+@media (max-width: 800px) {
+  .contact .contactHolder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem 3rem;
+    font-size: 1.3rem;
+    margin: 3rem 0 5rem 0;
+  }
+  .contact .contactHolder .contactInfo {
+    width: 100%;
+  }
+  .contact .contactHolder .contactInfo h4 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+  }
+  .contact .contactHolder .contactInfo i {
+    font-size: 3rem;
+  }
+  .contact .contactHolder .contactForm {
+    width: 100%;
+  }
+  .contact .contactHolder .contactForm p {
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .contact form button {
+    width: 60%;
+  }
+}
+
+@media (max-width: 550px) {
+  .contact .contactHolder {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact .contactHolder {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+  .contact .contactHolder .contactInfo h3 {
+    font-size: 1.5rem;
+  }
+  .contact .contactHolder .contactInfo h4 {
+    font-size: 1rem;
+    padding-bottom: 2px;
+  }
+  .contact .contactHolder .contactForm p {
+    font-size: 1rem;
+  }
 }
 
 footer {

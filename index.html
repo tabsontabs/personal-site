@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name='description' content='Personal portfolio site for Tabitha Poeez>
     <title>Tabitha's Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/34aa087edc.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/favicon.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <header>
-        <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
+        <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
         <div class='headerTitle headerWrapper'>
             <h1>Tabitha Poeze</h1>
             <img class='squiggle' src="./assets/squiggle.png" alt="Just a little squiggly line">
             <h2>Front-End Web Developer <span alt='emoji featuring a woman using a laptop'>👩‍💻</span></h2>
         </div>
-        <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
+        <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
     </header>
     <section class='about'>
-        <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
+        <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
         <div class='wrapper'>
             <div class='aboutHolder'>
                 <div class='aboutText'>
@@ -39,6 +41,7 @@
                         <li>Travel lover (22 countries and counting!) <span alt='an emoji featuring Earth'>🌎</span></li>
                         <li>I miss the old Kanye <span alt='an emoji featuring a cracked heart'>💔</span></li>
                     </ul>
+                    <!-- paragraph style of my about text: -->
                     <!-- <p>Web Developer 👩‍💻  Accessibility fanatic 🙆🏼‍♀️  Business school survivor 💼  Uses too many emojis 🤦🏼‍♀️ Dachshund mom 🐶  Astronomy geek 🚀 Game enthusiast (Ticket to Ride and Unstable Unicorns are my favs) 🎲 Ammateur sommelier 🍷  Travel lover (22 countries and counting!) 🌎  I miss the old Kanye 💔</p> -->
                 </div>
                 <div class='skills'>
@@ -96,11 +99,11 @@
                 </div>
             </div>
         </div>
-        <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
+        <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
     </section>
     <section class='projects'>
-        <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
-        <img class='trSquiggle' src="./assets/squiggleTransparent.png" alt="Just a little squiggly line">
+        <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
+        <img class='trSquiggle' src="./assets/squiggleTransparent.png" alt="Just a little squiggly line"> -->
         <div class='projectsContent wrapper'>
             <h3>Projects</h3>
             <ul class='projectsGrid'>
@@ -149,22 +152,24 @@
                 <button class='dot' onclick="currentProject(3)">●</button>
                 <button class='dot' onclick="currentProject(4)">●</button>
                 <button class='next' onClick="plusProjects(1)"><i class="fas fa-arrow-alt-circle-right" alt='an arrow pointing right'></i></button>
-            </div>
+                <button class='prevMobile' onClick="plusProjects(-1)"><i class="fas fa-arrow-alt-circle-left" alt='an arrow pointing left'></i></button>
+                <button class='nextMobile' onClick="plusProjects(1)"><i class="fas fa-arrow-alt-circle-right" alt='an arrow pointing right'></i></button>
+            </>
         </div>
-        <img class='trSquiggle' src="./assets/squiggleTransparent.png" alt="Just a little squiggly line">
-        <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
+        <!-- <img class='trSquiggle' src="./assets/squiggleTransparent.png" alt="Just a little squiggly line">
+        <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
     </section>
     <section class='contact'>
-        <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
+        <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
         <div class='wrapper'>
             <div class='contactHolder'>
                 <div class="contactInfo">
                     <h3>Get in Touch</h3>
                     <address>
                         <h4>Email Me <span alt='emoji featuring an envelope'>💌</span></h4>
-                        <p><a class='emailMe' href='mailto:tabitha.poeze@gmail.com'>tabitha.poeze@gmail.com</a></p>
+                        <p><a class='emailMe' href='mailto:tabitha.poeze@gmail.com'>tabitha.poeze [@] gmail.com</a></p>
                         <h4>Book a Chat <span alt='emoji featuring a cup of coffee'>☕️</span></h4>
-                        <p><a class='bookAChat' href='https://calendly.com/tabitha-poeze/30min' target='_blank'>https://calendly.com/tabitha-poeze/30min</a></p>
+                        <p><a class='bookAChat' href='https://calendly.com/tabitha-poeze/30min' target='_blank'>calendly.com/tabitha-poeze/</a></p>
                         <h4>Follow Me</h4>
                         <ul>
                             <li><a class='.socialIcon' href='https://twitter.com/thetabsontabs' target='_blank'><i alt='the Twitter logo' class="fab fa-twitter-square"></i></a></li>
@@ -186,7 +191,7 @@
                 </div>
             </div>
         </div>
-        <img class='circle' src="./assets/circleLines.png" alt="Striped circle">
+        <!-- <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
     </section>
     <footer>
         <div class='wrapper'>
