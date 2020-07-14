@@ -28,6 +28,9 @@ function showProjects(p) {
 function toggleNav() {
     let nv = document.getElementById('navDisplay');
     let imgNav = document.getElementById('navToggleImg');
+    let aboutScroll = document.getElementById('aboutScroll');
+    let projectsSCroll = document.getElementById('projectsScroll');
+    let contactScroll = document.getElementById('contactScroll');
 
     if (nv.style.display === 'flex') {
         (nv.style.display = 'none') 
@@ -39,5 +42,23 @@ function toggleNav() {
         (imgNav.style.opacity = 1)
     } else {
         imgNav.style.opacity = 0.5;
+    }
+
+    if (nv.style.display === 'flex') {
+        (aboutScroll.style.paddingTop = '65px') 
+    } else {
+        aboutScroll.style.paddingTop = 0;
+    }
+
+    if (nv.style.display === 'flex') {
+        (projectsScroll.style.paddingTop = '65px')
+    } else {
+        projectsScroll.style.paddingTop= 0;
+    }
+
+    if (nv.style.display === 'flex') {
+        (contactScroll.style.paddingTop = '65px')
+    } else {
+        contactScroll.style.paddingTop = 0;
     }
 }

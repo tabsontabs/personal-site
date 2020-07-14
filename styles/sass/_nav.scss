@@ -1,6 +1,6 @@
 nav {
     width: 100vw;
-    height: 75px;
+    height: 65px;
     display: none;
     justify-content: flex-end;
     align-items: center;
@@ -45,12 +45,13 @@ nav {
 }
 
 .navImg {
-    
+    border: none;
+
     img {
-        width: 50px;
+        width: 42px;
         position: fixed;
         top: 10px;
-        left: 15px;
+        left: 20px;
         z-index: 30;
         opacity: 0.5;
 
@@ -62,21 +63,35 @@ nav {
 
 @media (max-width: 550px) {
     nav {
-        width: 50vw;
-        height: 100vh;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        left: 0;
-
+        
         ul {
-            margin-top: 75px;
-            flex-direction: column;
 
             li {
-                padding: 20px 0px 20px 20px;
                 margin-left: 0px;
-                font-size: 1.5rem;
+                letter-spacing: 2px;
+
+                &:first-of-type {
+                    display: none;
+                }
+
+                &:last-of-type {
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+    .navImg {
+        img {
+            left: 15px;
+        }
+    }
+}
+
+@media (max-width: 349px) {
+    nav {
+        ul {
+            li {
+                padding: 5px;
             }
         }
     }
