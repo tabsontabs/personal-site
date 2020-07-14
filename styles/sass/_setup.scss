@@ -47,3 +47,7 @@ h3 {
     @include font(2rem, 5px, 900);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
