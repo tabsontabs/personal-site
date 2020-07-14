@@ -15,7 +15,7 @@
 
 <body>
     <header id='homeScroll'>
-        <button class='navImg' onClick='toggleNav()'><img id='navToggleImg' src='./assets/wavingEmojiGrey.png'></button>
+        <button class='navImg' onClick='toggleNav()' id='navToggleButton'><img id='navToggleImg' src='./assets/wavingEmojiGrey.png'></button>
         <nav id='navDisplay'>
             <ul>
                 <li><a href='#homeScroll'>Home</a></li>
@@ -155,16 +155,18 @@
                 </li>
             </ul>
             <div class='dotNav'>
+
+                <button class='prevMobile' onClick="plusProjects(-1)"><i class="fas fa-arrow-alt-circle-left"
+                        alt='an arrow pointing left'></i></button>
+                <button class='nextMobile' onClick="plusProjects(1)"><i class="fas fa-arrow-alt-circle-right"
+                        alt='an arrow pointing right'></i></button>
                 <button class='prev' onClick="plusProjects(-1)"><i class="fas fa-arrow-alt-circle-left" alt='an arrow pointing left'></i></button>
                 <button class='dot' onclick="currentProject(1)">●</button>
                 <button class='dot' onclick="currentProject(2)">●</button>
                 <button class='dot' onclick="currentProject(3)">●</button>
                 <button class='dot' onclick="currentProject(4)">●</button>
                 <button class='next' onClick="plusProjects(1)"><i class="fas fa-arrow-alt-circle-right" alt='an arrow pointing right'></i></button>
-                <button class='prevMobile' onClick="plusProjects(-1)"><i class="fas fa-arrow-alt-circle-left" alt='an arrow pointing left'></i></button>
-                <button class='nextMobile' onClick="plusProjects(1)"><i class="fas fa-arrow-alt-circle-right" alt='an arrow pointing right'></i></button>
-            </>
-        </div>
+            </div>
         <!-- <img class='trSquiggle' src="./assets/squiggleTransparent.png" alt="Just a little squiggly line">
         <img class='circle' src="./assets/circleLines.png" alt="Striped circle"> -->
     </section>
