@@ -435,7 +435,7 @@ nav ul li a:hover:before {
   position: fixed;
   top: 10px;
   left: 20px;
-  background-color: #FEF7F3;
+  background-color: rgba(0, 0, 0, 0);
   z-index: 30;
 }
 
@@ -526,6 +526,9 @@ nav ul li a:hover:before {
   }
   nav ul li:last-of-type {
     padding-right: 0px;
+  }
+  .navImg {
+    left: 15px;
   }
   .navImg img {
     left: 15px;

@@ -31,8 +31,6 @@ function toggleNav() {
     let aboutScroll = document.getElementById('aboutScroll');
     let projectsScroll = document.getElementById('projectsScroll');
     let contactScroll = document.getElementById('contactScroll');
-    let navButton = document.getElementById('navToggleButton');
-
 
     if (nv.style.display === 'flex') {
         (nv.style.display = 'none') 
@@ -44,12 +42,6 @@ function toggleNav() {
         (imgNav.style.opacity = 1)
     } else {
         imgNav.style.opacity = 0.5;
-    }
-
-    if (nv.style.display === 'flex') {
-        (navButton.style.backgroundColor = '#93C2BC')
-    } else {
-        navButton.style.backgroundColor = '#FEF7F3';
     }
 
     if (nv.style.display === 'flex') {

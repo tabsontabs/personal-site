@@ -51,7 +51,7 @@ nav {
     position: fixed;
     top: 10px;
     left: 20px;
-    background-color: $mainBackgroundColor;
+    background-color: rgba(0, 0, 0, 0);
     z-index: 30;
 
     img {
@@ -99,6 +99,7 @@ nav {
         }
     }
     .navImg {
+        left: 15px;
         img {
             left: 15px;
         }
