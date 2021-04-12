@@ -1,3 +1,4 @@
+const require = require('requirejs');
 const md5 = require("md5");
 
 const testJJ = {};
