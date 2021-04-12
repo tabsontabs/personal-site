@@ -13,11 +13,12 @@ testJJ.testAPI = () => {
         url: `${testJJ.url}`,
         method: 'POST',
         dataType: 'json',
-        data: {
-            "api_key": "626ba2f371ad95f267de7a02c8cc6601"
+        body: {
+            api_key: '626ba2f371ad95f267de7a02c8cc6601',
             // 'half_api_key': `${testJJ.halfAPI}`,
             // 'message_timestamp': 1618186394,
             // 'security_hash': '75abfe199348058913650c2603d4f5e1'
+            test: 'false'
         }
     }).then((response) => {
         if (response.success == true ) {
