@@ -1,5 +1,5 @@
-const require = require('requirejs');
-const md5 = require("md5");
+var require = require('requirejs');
+var md5 = require("md5");
 
 const testJJ = {};
 
