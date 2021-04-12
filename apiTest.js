@@ -14,11 +14,39 @@ testJJ.testAPI = () => {
         method: 'POST',
         dataType: 'json',
         body: {
-            api_key: '626ba2f371ad95f267de7a02c8cc6601',
+            'api_key': '1e021228719cf85949beaee6e2c4700c',
             // 'half_api_key': `${testJJ.halfAPI}`,
             // 'message_timestamp': 1618186394,
             // 'security_hash': '75abfe199348058913650c2603d4f5e1'
-            test: 'false'
+            'test': 'false',
+            'order': {
+                'client_ref': '1234-5678',
+                'ShippingContact': {
+                    "name": "Recipient Name",
+                    "email": "recipient@order.com",
+                    "phone": "6478811702",
+                    "address": "1 Road Street",
+                    "city": "Niceville",
+                    "country": "United Kingdom",
+                    "postcode": "P05 TC0"
+                },
+                'BillingContact': {
+                    "name": "Recipient Name",
+                    "email": "recipient@order.com",
+                    "phone": "6478811702",
+                    "address": "1 Road Street",
+                    "city": "Niceville",
+                    "country": "United Kingdom",
+                    "postcode": "P05 TC0"
+                },
+                'items': [
+                    {
+                        "client_ref": "ABC-123",
+                        "quantity": "2",
+                        "price": "4.00"
+                    }
+                ]
+            }
         }
     }).then((response) => {
         if (response.success == true ) {
