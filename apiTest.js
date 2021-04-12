@@ -8,7 +8,7 @@ testJJ.testAPI = () => {
         method: 'POST',
         dataType: 'json',
         data: {
-            api_key: '626ba2f371ad95f267de7a02c8cc6601'
+            "api_key": "626ba2f371ad95f267de7a02c8cc6601"
         }
     }).then((response) => {
         if (response.success = true ) {
