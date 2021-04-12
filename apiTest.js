@@ -13,7 +13,7 @@ testJJ.testAPI = () => {
         url: `${testJJ.url}`,
         method: 'POST',
         dataType: 'json',
-        body: {
+        data: {
             'api_key': '1e021228719cf85949beaee6e2c4700c',
             // 'half_api_key': `${testJJ.halfAPI}`,
             // 'message_timestamp': 1618186394,
