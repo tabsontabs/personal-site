@@ -20,6 +20,7 @@ testJJ.testAPI = () => {
         }
 
         console.log(response);
+        console.log(response.status);
     });
 }
 
