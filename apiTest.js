@@ -7,7 +7,7 @@ testJJ.timestamp = Math.round((new Date()).getTime() / 1000);
 
 console.log(testJJ.timestamp);
 
-var md5 = require('md5');
+
 console.log(md5(testJJ.timestamp + testJJ.fullAPI));
 
 testJJ.testAPI = () => {
