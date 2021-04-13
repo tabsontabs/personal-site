@@ -593,10 +593,10 @@ testJJ.testAPI = () => {
         method: 'POST',
         dataType: 'json',
         data: {
-            'api_key': `${testJJ.fullAPI}`,
-            // 'half_api_key': `${testJJ.halfAPI}`,
-            // 'message_timestamp': `${testJJ.timestamp}`,
-            // 'security_hash': `${testJJ.securityHash}`,
+            // 'api_key': `${testJJ.fullAPI}`,
+            'half_api_key': '1e13836776bb968a',
+            'message_timestamp': `${testJJ.timestamp}`,
+            'security_hash': `${testJJ.securityHash}`,
             'test': 'true',
             'order': {
                 'client_ref': '1234-5678',
