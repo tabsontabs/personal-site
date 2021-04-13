@@ -592,14 +592,14 @@ testJJ.testAPI = () => {
         url: `${testJJ.url}`,
         method: 'POST',
         dataType: 'json',
-        data: {
+        body: {
             // 'api_key': `${testJJ.fullAPI}`,
             'half_api_key': '1e13836776bb968a',
             'message_timestamp': `${testJJ.timestamp}`,
             'security_hash': `${testJJ.securityHash}`,
             'test': 'true',
             'order': {
-                'client_ref': '1234-5678',
+                'client_ref': '1234-5679',
                 'ShippingContact': {
                     "name": "Recipient Name",
                     "email": "recipient@order.com",
