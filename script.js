@@ -50,11 +50,11 @@ function toggleNav() {
         aboutScroll.style.paddingTop = 0;
     }
 
-    if (nv.style.display === 'flex') {
-        (projectsScroll.style.paddingTop = '65px')
-    } else {
-        projectsScroll.style.paddingTop= 0;
-    }
+    // if (nv.style.display === 'flex') {
+    //     (projectsScroll.style.paddingTop = '65px')
+    // } else {
+    //     projectsScroll.style.paddingTop= 0;
+    // }
 
     if (nv.style.display === 'flex') {
         (contactScroll.style.paddingTop = '65px')
